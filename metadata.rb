@@ -1,5 +1,5 @@
 name             'zenoss-csa'
-maintainer       'Jua Consulting'
+maintainer       'Stanley Karunditu'
 maintainer_email 'skamithi at gmail dot com'
 license          'Apache 2.0'
 description      'Installs/Configures zenoss enterprise'
