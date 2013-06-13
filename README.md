@@ -85,7 +85,7 @@ Using knife-solo run
     #knife cook cook root@10.1.1.1
     
 # License and Author
-* Author: Stanley Karunditu (stanley@juaconsulting.com)
+* Author: Stanley Karunditu (stanley at gmail dot com)
 
 Licensed under the Apache License, Version 2.0(the "License"); you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
