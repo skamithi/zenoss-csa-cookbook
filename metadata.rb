@@ -1,4 +1,4 @@
-name             'zenoss-csa-cookbook'
+name             'zenoss-csa'
 maintainer       'Jua Consulting'
 maintainer_email 'stanley@juaconsulting.com'
 license          'Apache 2.0'
