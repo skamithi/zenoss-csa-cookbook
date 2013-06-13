@@ -44,6 +44,46 @@ Sets the java home environment variable
 Installs Zends and Zenoss enterprise. Initializes the database for the first time.
 
 
+# Example using Chef-solo
+
+`roles/zenoss-csa.rb`
+    
+    name 'zenoss-csa'
+    description 'core install of zenoss enterprise'
+
+    run_list(
+      "recipe[zenoss-csa]"
+    )
+
+    base_url = 'http://10.2.1.1/zenoss/'
+
+    default_attributes(
+      :java => {
+        :url => base_url + 'jre-6u31-linux-amd64.rpm'
+      },
+      :zenoss => {
+        :repo_url => base_url + 'zenossdeps-4.2.x-1.el6.noarch.rpm',
+        :csa_url => base_url + 'zenoss_csa.rpm',
+        :msmonitor_url => base_url + 'zenoss_msmonitor.rpm',
+        :zends_url => base_url + 'zends.rpm'
+      }
+    )
+
+
+   
+`nodes/10.1.1.1.json`
+
+    {
+      "run_list":[
+        "role[zenoss-csa]"
+      ]
+    }
+
+Using knife-solo run
+    
+    #knife solo prepare root@10.1.1.1
+    #knife cook cook root@10.1.1.1
+    
 # License and Author
 * Author: Stanley Karunditu (stanley@juaconsulting.com)
 
