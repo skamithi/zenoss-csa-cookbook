@@ -1,6 +1,6 @@
 # Description
 
-Chef Cookbook for Installing Standalone Zenoss Enterprise 4.x on Centos
+Chef Cookbook for Installing Standalone Zenoss Cloud Services Assurance 4.x on Centos
 
 # Requirements
 
